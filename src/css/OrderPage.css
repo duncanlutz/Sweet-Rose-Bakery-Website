@@ -1,0 +1,11 @@
+.order-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
