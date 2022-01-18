@@ -41,7 +41,6 @@ function FlavorSelection(props) {
 
   return (
     <div className={props.flavor.toLowerCase().replace(/\s/, '-') + ' flavor-select' } onClick={selectFlavor}>
-        <img src={props.imageUrl} className='flavor-image' />
       <div className='flavor-name'>{props.flavor}</div>
     </div>
   );

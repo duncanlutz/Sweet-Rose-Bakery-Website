@@ -41,7 +41,6 @@ function SizeSelection(props) {
 
     return (
         <div className={`size-option ${props.size}`} onClick={handleSizeSelect}>
-            {/* <img className={`size-image ${props.size}`} src={props.imageUrl}></img> */}
             <div className="size-name">{`${props.size} inch`}</div>
         </div>
     );

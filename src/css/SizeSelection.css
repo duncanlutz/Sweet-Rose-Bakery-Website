@@ -1,11 +1,9 @@
 .size-option {
-  font-size: clamp(.2rem, .3em + .8vw, 3rem);
-  aspect-ratio: 1 / 1;
+  width: clamp(2rem, 12vw, 50rem);
   padding: .5rem .5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 200;
   border-radius: 0.5rem;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
@@ -14,6 +12,8 @@
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.67, 0.14, 0.3, 0.85);
   white-space: nowrap;
+  font-weight: 200;
+  font-size: clamp(.1rem, .3em + .8vw, 3rem);
 }
 
 .size-option:hover {

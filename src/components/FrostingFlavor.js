@@ -1,9 +1,8 @@
 import React from 'react';
 import $ from 'jquery';
-import '../css/FlavorSelection.css';
+import '../css/FrostingFlavor.css'
 
 function FlavorSelection(props) {
-
   const selectFlavor = (e) => {
     e.preventDefault();
     const t = e.target;
@@ -40,8 +39,12 @@ function FlavorSelection(props) {
   };
 
   return (
-    <div className={props.flavor.toLowerCase().replace(/\s/, '-') + ' frosting-option' } onClick={selectFlavor}>
-        <img src={props.imageUrl} className='flavor-image' />
+    <div
+      className={
+        props.flavor.toLowerCase().replace(/\s/, '-') + ' frosting-option'
+      }
+      onClick={selectFlavor}
+    >
       <div className='flavor-name'>{props.flavor}</div>
     </div>
   );

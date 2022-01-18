@@ -1,28 +1,28 @@
 .flavor-select {
-  width: clamp(2.5rem, 5vw, 8rem);
-  height: clamp(2.5rem, 5vw, 8rem);
-  padding: 1.5rem 1.5rem 1.5rem;
+  width: clamp(2rem, 17vw, 50rem);
+  padding: 0.5rem 0.5rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+  user-select: none;
   cursor: pointer;
-  border-radius: 0.5rem;
-  flex-shrink: 0;
-}
-
-.flavor-image {
-  object-fit: cover;
-  width: clamp(2.5rem, 5vw, 6rem);
-  height: clamp(2.5rem, 5vw, 6rem); 
-  border-radius: 0.5rem;
-  flex-shrink: 0;
+  transition: all 0.25s cubic-bezier(0.67, 0.14, 0.3, 0.85);
+  white-space: nowrap;
 }
 
 .flavor-name {
-  font-family: 'Poppins', 'Sans Serif';
-  font-weight: 600;
-  white-space: nowrap;
-  font-size: clamp(.5rem, 2vw, 1.4rem);;
+  font-weight: 200;
+  font-size: clamp(0.1rem, 0.3em + 0.8vw, 3rem);
+}
+
+.flavor-select:hover {
+  transform: scale(1.1);
+}
+
+.flavor-select.selected {
+  background-color: #edd6d7;
 }

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { IoHeartOutline } from 'react-icons/io5';
-import cookiePic from '../images/cookie-td.jpeg';
+import cookiePic from '../images/cookie-1.jpg';
 import StoreItem from '../components/StoreItem';
 import $ from 'jquery';
 import '../css/Home.css';
@@ -19,15 +19,15 @@ function Home() {
       clearTimeout(sliderTimer);
       if (e.target.classList.contains('btn-one')) {
         $('.act-slide-image').removeClass('act-slide-image');
-        $('.slide-image.one').toggleClass('act-slide-image');
+        $('.slide-image.home-one').toggleClass('act-slide-image');
         changeImage();
       } else if (e.target.classList.contains('btn-two')) {
         $('.act-slide-image').removeClass('act-slide-image');
-        $('.slide-image.two').toggleClass('act-slide-image');
+        $('.slide-image.home-two').toggleClass('act-slide-image');
         changeImage();
       } else if (e.target.classList.contains('btn-three')) {
         $('.act-slide-image').removeClass('act-slide-image');
-        $('.slide-image.three').toggleClass('act-slide-image');
+        $('.slide-image.home-three').toggleClass('act-slide-image');
         changeImage();
       }
     }
@@ -38,18 +38,18 @@ function Home() {
       if ($('.slider.btn-one').hasClass('act-slider')) {
         $('.slider.btn-one').toggleClass('act-slider');
         $('.slider.btn-two').toggleClass('act-slider');
-        $('.slide-image.one').toggleClass('act-slide-image');
-        $('.slide-image.two').toggleClass('act-slide-image');
+        $('.slide-image.home-one').toggleClass('act-slide-image');
+        $('.slide-image.home-two').toggleClass('act-slide-image');
       } else if ($('.slider.btn-two').hasClass('act-slider')) {
         $('.slider.btn-two').toggleClass('act-slider');
         $('.slider.btn-three').toggleClass('act-slider');
-        $('.slide-image.two').toggleClass('act-slide-image');
-        $('.slide-image.three').toggleClass('act-slide-image');
+        $('.slide-image.home-two').toggleClass('act-slide-image');
+        $('.slide-image.home-three').toggleClass('act-slide-image');
       } else if ($('.slider.btn-three').hasClass('act-slider')) {
         $('.slider.btn-three').toggleClass('act-slider');
         $('.slider.btn-one').toggleClass('act-slider');
-        $('.slide-image.three').toggleClass('act-slide-image');
-        $('.slide-image.one').toggleClass('act-slide-image');
+        $('.slide-image.home-three').toggleClass('act-slide-image');
+        $('.slide-image.home-one').toggleClass('act-slide-image');
       }
       changeImage();
     }, 5000);
@@ -72,9 +72,9 @@ function Home() {
             <div className='slide-filled'></div>
           </div>
         </div>
-        <div className='slide-image one act-slide-image'></div>
-        <div className='slide-image two'></div>
-        <div className='slide-image three'></div>
+        <div className='slide-image home-one act-slide-image'></div>
+        <div className='slide-image home-two'></div>
+        <div className='slide-image home-three'></div>
       </div>
       <div className="our-faves">
         <h3 className='favs-header'>
